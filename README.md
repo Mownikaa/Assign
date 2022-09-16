@@ -1,13 +1,13 @@
-# Basic express assignment
+# Tests
 
-Please do the express assignment as shown in the demo. The assignment is very crucial for the upcoming backend project.
 
-<br>
 
 # How to run the project:
 1. Fork project and
-2. run yarn or npm (depending on which package manager you are using)
+2. run yarn or npm install (depending on which package manager you are using)
 3. yarn start or npm run start
+4.docker build -t name 
+5.docker run --publish 8000:8000 express
 
 <br>
 
@@ -27,21 +27,4 @@ Please do the express assignment as shown in the demo. The assignment is very cr
   * update user information (like name and/or age)
   * delete user
 
-2. create new route for products (just like users - check index file)
-  * create new product
-  * get all products
-  * get one product
-  * update product
-  * delete product
 
-<br>
-
-### Here are couple of screenshots for a successful request:
-
-`a response for list of users`
-![All users](./screenshot/all-users.png)
-
-<br>
-
-`a response for one user`
-![Single user](./screenshot/one-user.png)
