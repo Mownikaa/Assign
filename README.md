@@ -14,9 +14,8 @@
 
 ## TODOs:
 
-1. continue the user route with tasks:
   * create new user 
-  * update user information (like name and/or age)
+  * update user information
   * delete user
 
 
