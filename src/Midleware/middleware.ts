@@ -1,7 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 const middleware = (req: Request, res: Response, next: NextFunction) => {
- 
-  next();
+   next();
 };
 
 export default middleware;
