@@ -1,5 +1,4 @@
 import express from "express";
-
 import userRoute from "./routes/user";
 import middleware from "./Midleware/middleware";
 
