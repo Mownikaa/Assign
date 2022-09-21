@@ -17,7 +17,6 @@ const users = [
   export const createUser = (req: Request, res: Response, next: NextFunction) => {
     const user = req.body;
     users.push(user);
-    console.log(user)
     res.json(user);  
   };
 
@@ -39,7 +38,6 @@ export const deleteUser = (req: Request, res: Response, next: NextFunction) => {
   const list = users.findIndex((user) => user.id === Number(req.params.id))
  if (list >= 0) {
   let deletedUser = users.splice(list, 1);
-  //console.log(deletedUser, "DELETED USER");
   res.status(200).json(users);
 } else {
   res.status(404).json({ error: "No user found!!" });
