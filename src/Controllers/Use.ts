@@ -24,13 +24,11 @@ const users = [
   const update = req.body;
   const userId = Number(req.params.id);
   const finduser = users.find((user) => user.id === userId);
-  console.log(finduser, "Before");
   if(!finduser){
     return res.json("no user Found")
   }
   finduser.name = update.name;
   finduser.age = update.age;
-  console.log(finduser, "After");
   res.status(200).json(finduser);
 };
 
